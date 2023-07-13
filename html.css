@@ -1,0 +1,332 @@
+body{
+    background:rgb(255, 254, 254);
+}
+h1{
+    color: white;
+    margin-bottom: 10px;
+    text-align:center;
+}
+.container{
+    height: 500px;
+    width: 500px;
+   
+    border:4px solid rgb(255, 255, 255);
+    margin:auto;
+    margin-top:5%;
+}
+.face{
+    height: 125px;
+    width: 150px;
+    background: chartreuse;
+    margin: auto;
+    margin-top: 50px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+   }
+.container:hover .face{
+    animation:face 2s infinite;
+}
+    @keyframes face{
+    0%{
+    transform:translateX(5px);
+    background: rgb(0, 255, 34);
+    }
+    25%{
+        transform:translate(20px);
+        background-color: rgb(0, 255, 98);
+    }
+    50%{
+        transform:translate(-5px);
+        background-color: rgb(72, 255, 0);
+    }
+    75%{
+        transform:translate(-20px);
+        background-color: rgb(0, 255, 34);
+    }
+    100%{
+        transform:taranslate(5px);
+        background-color: rgb(60, 255, 0);
+    }
+    }
+
+
+     .eyes{
+    display:flex;
+    width:150px;
+    justify-content:space-evenly;
+    padding-top: 60px;
+
+}
+.leye{
+    height: 30px;
+    width: 30px;
+    background: rgb(0, 0, 0);
+    margin: auto;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    
+}
+.container:hover .leye{
+    animation:reye .5s infinite;
+}
+@keyframes leye{
+    0%{
+        height:30px;
+        background:rgb(0, 0, 0);
+        transform: rotate(30deg);
+    }
+    50%{
+        height:30px;
+        background:rgb(0, 0, 0);
+        transform: rotate(30deg);
+    }
+    100%{
+        height:30px;
+        background:rgb(0, 0, 0);
+        transform: rotate(30deg);
+    }
+
+}
+
+.reye{
+    height: 30px;
+    width: 30px;
+    background: rgb(0, 0, 0);
+    margin: auto;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.container:hover .reye{
+    animation:reye .5s infinite;
+}
+@keyframes reye{
+    0%{
+        height:30px;
+        background:rgb(0, 0, 0);
+        transform: rotate(30deg);
+    }
+    50%{
+        height:30px;
+        background:rgb(0, 0, 0);
+        transform: rotate(20deg);
+    }
+    100%{
+        height:30px;
+        background:rgb(0, 0, 0);
+        transform: rotate(30deg);
+    }
+
+}
+.body{
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 10px;
+}
+.larm{
+    height:85px ;
+    width: 23px;
+    background: chartreuse;
+    margin-top: 20px;
+    border-radius: 30%;
+}
+.container:hover .larm{
+    animation: larm .3s infinite;
+}
+@keyframes larm{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+        background: rgb(0, 255, 13);
+
+    }
+    50%{
+        transform: rotate(40deg);
+        transform-origin: top;
+        background: rgb(0, 255, 76);
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top;
+        background-color: rgb(102, 255, 0);
+    }
+
+}
+
+.center{
+    height:125px ;
+    width: 150px;
+    background: chartreuse;
+    margin-top:2px;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+.container:hover .center{
+    animation:center 2s infinite;
+
+}
+@keyframes center{
+    0%{
+        transform: rotate(50deg);
+        border-radius: 25%;
+        background-color: rgb(0, 251, 42);
+    }
+    25%{
+        transform: rotate(-50deg);
+        border-radius: 25%;
+        background-color: chartreuse;
+    }
+    50%{
+        transform: rotate(70deg);
+        border-radius: 25%;
+        background-color: rgb(35, 255, 6);
+    }
+    75%{
+        transform: rotate(-180deg);
+        border-radius: 50%;
+        background-color: rgb(21, 255, 0);
+    }
+    100%{
+        transform: rotate(160deg);
+        border-radius: 25%;
+        background-color: rgb(30, 255, 0);
+    }
+}
+.rarm{
+    height:85px ;
+    width: 23px;
+    background: chartreuse;
+    margin-top: 20px;
+    border-radius: 30%;
+}
+.container:hover .rarm{
+    animation: rarm .2s infinite;
+}
+@keyframes rarm{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+        background: rgb(2, 255, 2)(0, 255, 0);
+
+    }
+    50%{
+        transform: rotate(-40deg);
+        transform-origin: top;
+        background: rgb(26, 255, 5);
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top;
+        background-color: rgb(9, 255, 0);
+    }
+
+}
+.container:hover .rarm{
+    animation: rarm .5s infinite;
+}
+@keyframes rarm{
+    0%{
+        transform:translateY(10px);
+
+        background: rgb(0, 255, 21);
+
+    }
+    50%{
+        transform: rotate(-40deg);
+        transform-origin: top;
+        background: rgb(2, 255, 65);
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top;
+        background-color: rgb(0, 255, 0);
+    }
+
+}
+
+.legs{
+    display:flex;
+    width: 150px;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.lleg{
+    height: 85px;
+    width: 23px;
+    background: chartreuse;
+    margin-top: 10px;
+    border-radius: 30%;
+}
+.container:hover .lleg{
+    animation: lleg .5s infinite;
+}
+@keyframes lleg{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+        background: rgb(8, 255, 82);
+
+    }
+    50%{
+        transform: rotate(40deg);
+        transform-origin: top;
+        background: rgb(0, 255, 0);
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top;
+        background-color: rgb(0, 255, 34);
+    }
+
+}
+
+.rleg{
+    height: 85px;
+    width: 23px;
+    background: chartreuse;
+    margin-top: 10px;
+    border-radius: 30%;
+
+}
+.container:hover .rleg{
+    animation: rleg .5s infinite;
+}
+@keyframes rleg{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+        background: rgb(21, 255, 0);
+
+    }
+    50%{
+        transform: rotate(-40deg);
+        transform-origin: top;
+        background: rgb(0, 255, 115);
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top;
+        background-color: rgb(30, 255, 0);
+    }125%{
+        transform: rotate(0deg);
+        transform-origin: top;
+        background: rgb(11, 255, 92);
+
+    }
+    150%{
+        transform: rotate(-40deg);
+        transform-origin: top;
+        background: rgb(72, 255, 0);
+    }
+    200%{
+        transform: rotate(0deg);
+        transform-origin: top;
+        background-color: rgb(0, 255, 13);
+
+}
+} 
